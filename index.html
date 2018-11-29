@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>isthereanopenboothatcaffeparadisorightnow?</title>
+  <style media="screen">
+    body {
+      background-color: #eeeeee;
+    }
+    .noBox {
+      align-items: center;
+      display:flex;
+      height: 90vh;
+      justify-content: center;
+      width: 100%;
+    }
+    .no {
+      font-family: 'Comic Sans MS';
+      font-size: 30vw;
+    }
+    .moreBox {
+      cursor: hand;
+      font-family: 'Arial Black';
+      text-align: center;
+    }
+    i.down {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 10px;
+    }
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    .blurb {
+      cursor: default;
+      display: none;
+      font-family: 'Arial';
+      padding: 0 10vw;
+      text-align: left;
+    }
+    a, a:visited {
+      color: black;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = () =>
+    document.getElementsByClassName('moreBox')[0].onclick = () => {
+      let curr = document.getElementsByClassName('blurb')[0].style.display;
+      document.getElementsByClassName('blurb')[0].style.display =
+        curr ==  'inherit' ? 'none' : 'inherit';
+        window.scrollTo(0,document.body.scrollHeight);
+
+    }
+  </script>
+</head>
+<body>
+  <div class="noBox">
+    <div class="no">
+      NO
+    </div>
+  </div>
+  <div class="moreBox">
+    <div>how was this result calculated ?<i class="down"></i></div>
+    <div class="blurb">
+      <p>
+        Information on this website is gathered using an accurate and reliable
+        method known as the <b><i>Always Assume That There Are Zero (0) Booths
+          Open at Any Given Time – Except for When One Is Open (Read: Very Rarely)
+           – at Caffe Paradiso Theorem<sup>1</sup></i></b>. Historically, this method has
+           achieved
+        an accuracy greater than 99%.
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <sup>1 </sup> Based on first hand evidence from numerous reports. 2016-18.
+        <br/>
+        <sup>2 </sup> <a target='_none' href='https://welcomepress.xyz'>WELCOMEPRESS.xyz</a>
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>
